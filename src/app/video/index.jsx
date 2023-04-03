@@ -14,9 +14,12 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 const Video = () => {
   const theme = useTheme();
 
+  const bp = { xs: "12", sm: "12", md: "8", lg: "8", xl: "8" };
+  const bp1 = { xs: "12", sm: "12", md: "4", lg: "4", xl: "4" };
+
   return (
-    <Grid container>
-      <Grid item xs={8}>
+    <Grid container spacing={2}>
+      <Grid item {...bp}>
         <Card sx={{ minWidth: "auto", flexGrow: 1, width: "100%" }}>
           <video
             autoPlay
@@ -68,7 +71,7 @@ const Video = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item {...bp1}>
         <VideoList />
       </Grid>
     </Grid>

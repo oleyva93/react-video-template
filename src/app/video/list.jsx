@@ -23,7 +23,6 @@ export default function AlignItemsList() {
     <Box
       sx={{
         width: "100%",
-        ml: "12px",
         borderRadius: "4px",
       }}
     >
