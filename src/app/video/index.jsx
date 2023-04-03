@@ -1,15 +1,12 @@
-import { Avatar, Card, Grid } from "@mui/material";
-import { memo } from "react";
-import VideoList from "./list";
-import { useTheme } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import CardContent from "@mui/material/CardContent";
 import DownloadIcon from "@mui/icons-material/Download";
+import ShareIcon from "@mui/icons-material/Share";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import { Avatar, Card, Grid } from "@mui/material";
+import CardContent from "@mui/material/CardContent";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import ShareIcon from "@mui/icons-material/Share";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import { memo } from "react";
+import VideoList from "./list";
 
 const Video = () => {
   const bp = { xs: "12", sm: "12", md: "8", lg: "8", xl: "8" };
@@ -32,7 +29,7 @@ const Video = () => {
           </video>
         </Card>
         <Grid container>
-          <Grid item xs={6}>
+          <Grid item xs={9}>
             <CardContent sx={{ display: "flex", gap: 3 }}>
               <Avatar
                 alt="Remy Sharp"
@@ -52,7 +49,7 @@ const Video = () => {
           </Grid>
           <Grid
             item
-            xs={6}
+            xs={3}
             display="flex"
             justifyContent="end"
             alignItems="center"
