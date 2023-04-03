@@ -12,8 +12,6 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 
 const Video = () => {
-  const theme = useTheme();
-
   const bp = { xs: "12", sm: "12", md: "8", lg: "8", xl: "8" };
   const bp1 = { xs: "12", sm: "12", md: "4", lg: "4", xl: "4" };
 
